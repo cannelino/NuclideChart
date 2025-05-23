@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Oculus/Interaction/Samples/Scenes/BasicGrab.unity
+    guid: 13bd76582a631124699f410c1e007f8c
+  - enabled: 0
+    path: Assets/Oculus/Interaction/Samples/Scenes/BasicPoke.unity
+    guid: e6661efa421761b4299803adcd8c1c9a
+  - enabled: 0
+    path: Assets/Oculus/Interaction/Samples/Scenes/BasicPoseDetection.unity
+    guid: 5661873a4cd8ad8469c072d3852197c2
+  - enabled: 0
+    path: Assets/Oculus/Interaction/Samples/Scenes/BasicRay.unity
+    guid: 7e040656f12f8dc44a6d88406081f26c
+  - enabled: 0
+    path: Assets/Oculus/Interaction/Samples/Scenes/ComplexGrab.unity
+    guid: b4db51bf4876fde4ebaca05af639db73
+  - enabled: 0
+    path: Assets/Scenes/FloorScene.unity
+    guid: 4163c260416ab9d4f861c5284c8f3654
+  - enabled: 0
+    path: Assets/Scenes/WallWalkScene.unity
+    guid: 87be2e7da80bca24392997d914fae421
+  - enabled: 0
+    path: Assets/Scenes/FloorTeleportScene.unity
+    guid: 2a8eb4802e6be4549b16cc66590fa124
+  - enabled: 0
+    path: Assets/Scenes/WallTeleportScene.unity
+    guid: 238ae82fe3ca5b4459820cc1ce6eb257
+  - enabled: 1
+    path: Assets/Scenes/FloorWalkScene.unity
+    guid: d820041681f2d154e8794843c1b1da15
+  - enabled: 0
+    path: Assets/Scenes/TestScene.unity
+    guid: d57fa1e9d17e330419fb03344b4644ca
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: d6fbcd667eafada428c3edbfdd47ef7b, type: 2}
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 0dd76783a9ef8dc42b8fdaf1f59afa7d, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 69e097125db452545a580e664e4f459c, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 3a2bc3698f517b64eb3679503443723d, type: 2}
