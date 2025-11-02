@@ -21,7 +21,7 @@ public class NuclidGenerator : MonoBehaviour
 
         foreach (KeyValuePair<KeyClassDict, Nuklidclass> entry in nucliddata.nucliddata)
         {
-            if (!Smallmap || (entry.Key.protonnumber > 78 && entry.Key.protonnumber < 89) && (entry.Key.neutronnumber > 121 && entry.Key.neutronnumber < 137))
+            if (!Smallmap || (entry.Key.protonnumber > 78 && entry.Key.protonnumber < 94) && (entry.Key.neutronnumber > 121 && entry.Key.neutronnumber < 148))
             {
                 GameObject nuclid = Instantiate(nuclidePrefab);
                 nuclid.transform.position = new Vector3(entry.Key.neutronnumber * 1, 0, entry.Key.protonnumber * 1);

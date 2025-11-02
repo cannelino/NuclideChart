@@ -42,7 +42,7 @@ public class Decayrow : MonoBehaviour
     public void SetStart()
     {
         errortextbox.text = "Fehler: " + errorcount.ToString();
-        correcttextbox.text = correctCount + " / 6";
+        correcttextbox.text = correctCount + " / 12";
         Nuklidclass Originnuklid = new Nuklidclass();
         switch (ActiveRow)
         {
@@ -77,20 +77,20 @@ public class Decayrow : MonoBehaviour
                 break;
             case Rows.UranRadium:
 
-                if (nucliddata.nucliddata.TryGetValue(new KeyClassDict(82, 131), out Originnuklid))
+                if (nucliddata.nucliddata.TryGetValue(new KeyClassDict(92, 146), out Originnuklid))
                 {
                     //Originnuklid.Prefab.GetComponent<NuclidPrefabElements>().SetOutlineColor(Color.green);
                     //Player.position = new Vector3(Originnuklid.Prefab.transform.position.x - centreCamera.localPosition.x, 0.65f, Originnuklid.Prefab.transform.position.z - centreCamera.localPosition.z);
-                    StartCoroutine(SetPositionAfterTime(0.1f, Originnuklid, new KeyClassDict(82, 131)));
+                    StartCoroutine(SetPositionAfterTime(0.1f, Originnuklid, new KeyClassDict(92, 146)));
                 }
                 break;
             case Rows.UranActinium:
 
-                if (nucliddata.nucliddata.TryGetValue(new KeyClassDict(85, 133), out Originnuklid))
+                if (nucliddata.nucliddata.TryGetValue(new KeyClassDict(92, 143), out Originnuklid))
                 {
                     //Originnuklid.Prefab.GetComponent<NuclidPrefabElements>().SetOutlineColor(Color.green);
                     //Player.position = new Vector3(Originnuklid.Prefab.transform.position.x - centreCamera.localPosition.x, 0.65f, Originnuklid.Prefab.transform.position.z - centreCamera.localPosition.z);
-                    StartCoroutine(SetPositionAfterTime(0.1f, Originnuklid, new KeyClassDict(85, 133)));
+                    StartCoroutine(SetPositionAfterTime(0.1f, Originnuklid, new KeyClassDict(92, 143)));
                 }
                 break;
             default:
@@ -154,15 +154,15 @@ public class Decayrow : MonoBehaviour
                 break;
             case Rows.UranRadium:
 
-                //rowelements.Add(new KeyClassDict(92, 146));
-                //rowelements.Add(new KeyClassDict(90, 144));
-                //rowelements.Add(new KeyClassDict(91, 143));
-                //rowelements.Add(new KeyClassDict(92, 142));
-                //rowelements.Add(new KeyClassDict(90, 140));
-                //rowelements.Add(new KeyClassDict(88, 138));
-                //rowelements.Add(new KeyClassDict(86, 136));
-                //rowelements.Add(new KeyClassDict(84, 134));
-                //rowelements.Add(new KeyClassDict(82, 132));
+                rowelements.Add(new KeyClassDict(92, 146));
+                rowelements.Add(new KeyClassDict(90, 144));
+                rowelements.Add(new KeyClassDict(91, 143));
+                rowelements.Add(new KeyClassDict(92, 142));
+                rowelements.Add(new KeyClassDict(90, 140));
+                rowelements.Add(new KeyClassDict(88, 138));
+                rowelements.Add(new KeyClassDict(86, 136));
+                rowelements.Add(new KeyClassDict(84, 134));
+                rowelements.Add(new KeyClassDict(82, 132));
                 rowelements.Add(new KeyClassDict(83, 131));
                 rowelements.Add(new KeyClassDict(84, 130));
                 rowelements.Add(new KeyClassDict(81, 129));
@@ -174,13 +174,13 @@ public class Decayrow : MonoBehaviour
                 break;
             case Rows.UranActinium:
 
-                //rowelements.Add(new KeyClassDict(92, 143));
-                //rowelements.Add(new KeyClassDict(90, 141));
-                //rowelements.Add(new KeyClassDict(91, 140));
-                //rowelements.Add(new KeyClassDict(89, 138));
-                //rowelements.Add(new KeyClassDict(90, 137));
-                //rowelements.Add(new KeyClassDict(87, 136));
-                //rowelements.Add(new KeyClassDict(88, 135));
+                rowelements.Add(new KeyClassDict(92, 143));
+                rowelements.Add(new KeyClassDict(90, 141));
+                rowelements.Add(new KeyClassDict(91, 140));
+                rowelements.Add(new KeyClassDict(89, 138));
+                rowelements.Add(new KeyClassDict(90, 137));
+                rowelements.Add(new KeyClassDict(87, 136));
+                rowelements.Add(new KeyClassDict(88, 135));
                 rowelements.Add(new KeyClassDict(86, 133));
                 rowelements.Add(new KeyClassDict(84, 131));
                 rowelements.Add(new KeyClassDict(82, 129));
